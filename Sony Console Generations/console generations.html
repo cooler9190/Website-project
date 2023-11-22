@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+<title>The PlayStation</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+body 
+{
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+  background-image: url("ps background.jpg");
+  background-size: auto;
+  background-position: center;
+}
+
+* 
+{
+  box-sizing: border-box;
+}
+
+.mySlides 
+{
+  display: none
+}
+
+.slideshow-container 
+{
+  max-width: auto;
+  position: relative;
+  margin: auto;
+}
+
+.prev, .next 
+{
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev:hover, .next:hover 
+{
+  background-color: rgba(0,0,0,0.8);
+}
+
+.dot 
+{
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover 
+{
+  background-color: #717171;
+}
+
+.fade 
+{
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade 
+{
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+
+.next 
+{
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.header
+{
+  padding: 80px;
+  text-align: center;
+  color: white;
+}
+
+.header h1 
+{   
+  font-size: 40px;
+}
+
+.header em
+{   
+  font-size: 20px;
+}
+
+.navbar 
+{
+  overflow: hidden; 
+  background-color: #333; 
+}
+
+.navbar a 
+{
+  float: left; 
+  display: block; 
+  color: white; 
+  text-align: center; 
+  padding: 14px 20px; 
+  text-decoration: none; 
+}
+
+.dropdown
+{
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn 
+{
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+}
+.navbar a:hover, .dropdown:hover .dropbtn 
+{
+  background-color: red;
+}
+
+.dropdown-content 
+{
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a 
+{
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover 
+{
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content 
+{
+  display: block;
+}
+
+.row 
+{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main 
+{
+  flex: auto; 
+  color: white;
+}
+
+.ken 
+{
+  max-width: 100%;
+  height: auto;
+  position: left;
+}
+
+.sonycomp
+{
+  max-width: 100%;
+  height: auto;
+  position: left;
+}
+
+.footer 
+{
+  padding: 10px; 
+  text-align: center;
+  background: #333; 
+  color: white;
+  overflow: hidden;
+}
+
+.footer .p1
+{
+  float: left;
+}
+
+.footer .p2
+{
+  float: right;
+}
+
+@media screen and (max-width: 400px) 
+{
+  .navbar a, .dropdown, .dropbtn
+  {
+    float: none;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) 
+{
+  .footer .p1, .p2
+  {
+    float: none;
+    width: 100%;
+  }
+}
+
+</style>
+</head>
+<body>
+  <div class="header">
+    <img src="ps logo.png">
+    <h1>Sony's PlayStation</h1>
+    <em>The console that changed gaming</em>
+  </div>
+
+  <div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <a href="ps1.html">
+       <img src="ps1.png" style="width:100%">
+      </a>
+    </div>
+    
+    <div class="mySlides fade">
+      <a href="ps2.html">
+       <img src="ps2.png" style="width:100%">
+      </a>
+    </div>
+    
+    <div class="mySlides fade">
+      <a href="ps3.html">
+       <img src="ps3.png" style="width:100%">
+      </a>
+    </div>
+
+    <div class="mySlides fade">
+      <a href="ps4.html">
+       <img src="ps4.png" style="width:100%;">
+      </a>
+    </div>
+
+    <div class="mySlides fade">
+      <a href="ps5.html">
+       <img src="ps5.png" style="width:100%">
+      </a>
+    </div>
+
+    <div class="mySlides fade">
+      <a href="psp.html">
+       <img src="psp.png" style="width:100%">
+      </a>
+    </div>
+
+    <div class="mySlides fade">
+      <a href="psvita.html">
+       <img src="psvita.png" style="width:100%">
+      </a>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+
+  </div>
+  <br>
+  
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span> 
+    <span class="dot" onclick="currentSlide(5)"></span> 
+    <span class="dot" onclick="currentSlide(6)"></span> 
+    <span class="dot" onclick="currentSlide(7)"></span> 
+  </div>
+    
+    <div class="navbar">
+        <a href="console generations.html">Home</a>
+        <div class="dropdown">
+          <button class="dropbtn"> Consoles
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="ps1.html">PlayStation 1</a>
+            <a href="ps2.html">PlayStation 2</a>
+            <a href="ps3.html">PlayStation 3</a>
+            <a href="ps4.html">PlayStation 4</a>
+            <a href="ps5.html">PlayStation 5</a>
+          </div>
+        </div>
+        <div class="dropdown">
+          <button class="dropbtn"> Handheld devices
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+            <a href="psp.html">PlayStation Portable</a>
+            <a href="psvita.html">PlayStation Vita</a>
+          </div>
+        </div>
+    </div> 
+    
+    <div class="row">
+        <div class="main">
+            <h2>Origins</h2>
+            <img src="ken.jpg" class="ken">
+            <p>PlayStation was the brainchild of Ken Kutaragi, a Sony executive who managed one of the company's hardware engineering divisions
+               and was later dubbed "The Father of the PlayStation".</p> 
+            <p>Until 1991, Sony had little direct involvement with the video game industry. 
+               The company supplied components for other consoles, such as the sound chip for the Super Famicom from Nintendo,
+               and operated a video game studio, Sony Imagesoft. As part of a joint project between Nintendo and Sony that began as early as 1988,
+               the two companies worked to create a CD-ROM version of the Super Famicom, though Nintendo denied the existence of the Sony deal as 
+               late as March 1991. At the Consumer Electronics Show in June 1991, Sony revealed a Super Famicom with a built-in CD-ROM drive 
+               that incorporated Green Book technology or CD-i, called "Play Station" (also known as SNES-CD).
+               However, a day after the announcement at CES, Nintendo announced that it would be breaking its partnership with Sony,
+               opting to go with Philips instead but using the same technology. The deal was broken by Nintendo
+               after they were unable to come to an agreement on how revenue would be split between the two companies. 
+               The breaking of the partnership infuriated Sony President Norio Ohga, who responded by appointing Kutaragi with the responsibility of developing
+               the PlayStation project to rival Nintendo.</p>
+            <p>At that time, negotiations were still on-going between Nintendo and Sony, with Nintendo offering Sony a "non-gaming role" regarding their new partnership with Philips. 
+               This proposal was swiftly rejected by Kutaragi who was facing increasing criticism over his work with regard to entering the video game industry from within Sony.
+               Negotiations officially ended in May 1992 and in order to decide the fate of the PlayStation project, a meeting was held in June 1992, consisting of Sony President Ohga, 
+               PlayStation Head Kutaragi and several senior members of Sony's board. At the meeting, Kutaragi unveiled a proprietary CD-ROM-based system he had been working on which 
+               involved playing video games with 3D graphics to the board. Eventually, Sony President Ohga decided to retain the project after being reminded by Kutaragi
+               of the humiliation he suffered from Nintendo. Nevertheless, due to strong opposition from a majority present at the meeting as well as widespread internal
+               opposition to the project by the older generation of Sony executives, Kutaragi and his team had to be shifted from Sony's headquarters to Sony Music,
+               a completely separate financial entity owned by Sony, so as to retain the project and maintain relationships with Philips for the MMCD development project
+               (which helped lead to the creation of the DVD).</p>
+             <p>According to SCE's producer Ryoji Akagawa and chairman Shigeo Maruyama, there was uncertainty over whether the console should primarily focus on 2D sprite graphics or 3D polygon graphics.
+                Eventually, after witnessing the success of Sega's Virtua Fighter in Japanese arcades, that Sony realized "the direction of the PlayStation became instantly clear" and 3D polygon graphics
+                became the console's primary focus.</p>  
+             <p>The PlayStation logo was designed by Manabu Sakamoto. He wanted the logo to capture the 3D support of the console,
+                but instead of just adding apparent depth to the letters "P" and "S", he created an optical illusion that suggested
+                the letters in depth of space. Sakamoto also stuck with four bright principal colors, red, yellow, green, and blue,
+                only having to tune the green color for better harmony across the logo. Sakamoto also designed the black and white
+                logo based on the same design, reserved for times where colors could not be used.</p>   
+            <br>
+            <h2>Formation of Sony Computer Entertainment</h2>
+            <img src="sonycomp.png" class="sonycomp">
+            <p>At Sony Music Entertainment, Kutaragi worked closely with Shigeo Maruyama, the CEO of Sony Music,
+               and with Akira Sato to form Sony Computer Entertainment Inc. (SCEI) on November 16, 1993.
+               A building block of SCEI was its initial partnership with Sony Music which helped SCEI attract creative
+               talent to the company as well as assist SCEI in manufacturing, marketing and producing discs, 
+               something that Sony Music had been doing with Music Discs. The final two key members of SCEI were Terry Tokunaka,
+               the President of SCEI from Sony's headquarters, and Olaf Olafsson. Olafsson was CEO
+               and president of New York-based Sony Interactive Entertainment which was the parent company
+               for the 1994-founded Sony Computer Entertainment of America (SCEA).</p>
+            <p>The PlayStation project, SCEI's first official project,
+               was finally given the green light by Sony executives in 1993 after a few years of development.
+               Also in 1993, Phil Harrison, who later became President of SCE Worldwide Studios,
+              was recruited into SCEI to attract developers and publishers to produce games for their new PlayStation platform.</p>   
+            <p>Computer Gaming World in March 1994 reported a rumor that the "Sony PS-X" would be released in Japan "before the end of this year
+               and will retail for less than $400". After a demonstration of Sony's distribution plan
+               as well as tech demos of its new console to game publishers and developers in a hotel in Tokyo in 1994,
+               numerous developers began to approach PlayStation. Two of whom later became major partners were
+               Electronic Arts in the West and Namco in Japan. One of the factors which attracted developers to the platform
+               was the use of a 3D-capable, CD-ROM-based console which was much cheaper and easier to manufacture
+               for in comparison to Nintendo's rival console, which used cartridge systems. The project eventually hit Japanese stores
+               in December 1994 and gained massive sales due to its lower price point than its competitor, the Sega Saturn.
+               The popularity of the console spread after its release worldwide in North America and Europe.</p>  
+        </div>
+    </div> 
+
+    <div class="footer">
+        <h2>Contacts:</h2>
+        <div class="p1">E-mail: <u>nikk.georgiev@abv.bg</u></div>
+        <div class="p2">Mobile number: +359896755751</div>
+    </div>
+
+    <script>
+      let slideIndex = 1;
+      showSlides(slideIndex);
+      showSlidesAuto();
+      
+      function plusSlides(n) 
+      {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) 
+      {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) 
+      {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) 
+        {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) 
+        {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+      }
+
+      </script>
+
+</body>
+</html>
